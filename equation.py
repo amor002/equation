@@ -34,7 +34,6 @@ class Equation:
 
 			if equation[i] in self.numbers and equation[i-1] in self.numbers:
 				sorted_equation += [equation[i]]
-				check_point = i+1
 				continue
 
 			if (equation[i] in self.sign):
