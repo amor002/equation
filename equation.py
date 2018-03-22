@@ -92,7 +92,11 @@ class Equation:
 
 		return str(res)
 
-#equation = Equation("4+x*3-2=8")
-#equation.solve()
-#print(equation.x)
+#equation1 = Equation("4+x*3-2=8")
+#equation1.solve()
+#print(equation1.x)
 #>>> 2
+#equation2 = Equation("y-1=9")
+#equation2.solve()
+#print(equation2.y)
+#>>> 10
