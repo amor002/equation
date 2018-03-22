@@ -92,3 +92,7 @@ class Equation:
 
 		return str(res)
 
+#equation = Equation("4+x*3-2=8")
+#equation.solve()
+#print(equation.x)
+#>>> 2
