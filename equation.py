@@ -73,7 +73,7 @@ class Equation:
 		
 		self.two_sides[0] = self.two_sides[0][:4]
 		self.two_sides[1] = self.to_string(self.two_sides[1] + self.reverse(self.two_sides[0][2:])) if start == 3 else self.two_sides[1]
-		exec("self." + self.two_sides[0][1] + '=' + (self.two_sides[1] if self.two_sides[0] != '-' else '-'+self.two_sides[1]))
+		exec("self." + self.two_sides[0][1] + '=' + (self.two_sides[1] if self.two_sides[0][0] != '-' else '-'+self.two_sides[1]))
 
 	def reverse(self, equation):
 		equation = list(equation)
@@ -91,11 +91,15 @@ class Equation:
 
 		return str(res)
 
-#equation1 = Equation("4+x*3-2=8")
-#equation1.solve()
-#print(equation1.x)
-#>>> 2
-#equation2 = Equation("y-1=9")
-#equation2.solve()
-#print(equation2.y)
-#>>> 10
+#e = Equation("x+34=11")
+#e.solve()
+#print(e.x)
+#>>> -23
+
+#e = Equation("450-y+3*2=1")
+#e.solve()
+#print(e.y)
+#>>> 455
+
+
+
